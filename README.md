@@ -1,14 +1,17 @@
 # alloc8
 
 <div>
-    <p>This project's source code has been provided by the IBM Corporation and I have done the following works:</p>
+    <p>This project's source code has been provided by the IBM Corporation. Here's an overview of the work done:</p>
     <ul>
-        Budget.js:
-        
-        In Budget.js, I have used the useState hook to create a state variable named newBudget and initialized it with the current value of budget. I have also changed the value of newBudget with a function called handleBudgetChange when the user modifies the input field.
-        
-        Next, I have adjusted the value attribute of the input field to newBudget and incorporated an onChange event listener that invokes handleBudgetChange when the user alters the input field's value.
-        
-        Here, I have utilized the Bootstrap Alert classes to create a visually appealing gray background, inserted text, and manually set a value.
+        <li><strong>Budget.js:</strong></li>
+        <li>
+            In Budget.js, I utilized the useState hook to create a state variable called newBudget, initialized with the current value of budget. The value of newBudget is updated using the handleBudgetChange function when the user modifies the input field.
+        </li>
+        <li>
+            I adjusted the value attribute of the input field to newBudget and added an onChange event listener to invoke handleBudgetChange when the input field value is altered.
+        </li>
+        <li>
+            Additionally, I utilized Bootstrap Alert classes to style the component, providing a visually appealing gray background, inserting text, and setting a value manually.
+        </li>
     </ul> 
 </div>
