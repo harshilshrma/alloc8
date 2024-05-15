@@ -59,14 +59,26 @@ const AllocationForm = (props) => {
                         <option value="Reduce" name="Reduce">Reduce</option>
                     </select>
 
-                    <input
-                        required='required'
-                        type='number'
-                        id='cost'
-                        value={cost}
-                        style={{ marginLeft: '2rem', size: 10 }}
-                        onChange={(event) => setCost(event.target.value)}>
-                    </input>
+                    <div style={{ display: 'flex', alignItems: 'center', marginLeft: '2rem' }}>
+                        <span>£</span>
+                        <input
+                            required='required'
+                            type='number'
+                            id='cost'
+                            value={cost}
+                            style={{ marginLeft: '0.5rem', width: '100%' }}
+                            onChange={(event) => {
+                                const inputValue = parseInt(event.target.value);
+                                if (inputValue > remaining) {
+                                    alert(`The value cannot exceed remaining funds: £${remaining}`);
+                                    event.target.value = "";
+                                } else {
+                                    setCost(event.target.value);
+                                }
+                            }
+                            }
+                        />
+                    </div>
 
                     <button className="btn btn-primary" onClick={submitEvent} style={{ marginLeft: '2rem' }}>
                         Save
