@@ -1,22 +1,33 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { AppContext } from '../context/AppContext';
 
 const CurrencyDropdown = () => {
-    const [selectedCurrency, setSelectedCurrency] = useState('Dollar');
-    const currencies = ['Dollar', 'Pound', 'Euro', 'Rupee'];
+    const { currency, updateCurrency } = useContext(AppContext);
+    const currencies = ['$ Dollar', '£ Pound', '€ Euro', '₹ Rupee'];
+
+    // function to split currency
+    const getCurrencyParts = (fullCurrency) => {
+        const [symbol, text] = fullCurrency.split(' ');
+        return { symbol, text };
+    }
 
     const handleChange = (event) => {
-        setSelectedCurrency(event.target.value);
+        updateCurrency(event.target.value);
     }
 
     return (
         <div>
-            <label>Currency</label>
-            <select value={selectedCurrency} onChange={handleChange}>
-                {currencies.map((currency) => (
-                    <option key={currency} value={currency}>
-                        {currency}
-                    </option>
-                ))}
+            <label>Currency: </label>
+            <select value={currency} className='alert alert-success' onChange={handleChange} style={{ marginLeft: "10px" }}>
+                { currencies.map((fullCurrency) => {
+                    const { symbol, text } = getCurrencyParts(fullCurrency);
+                    return (
+                        <option key={`${symbol}${text}`} value={fullCurrency}>
+                            {`${symbol} ${text}`}
+                        </option>
+                    )
+                })
+                }
             </select>
         </div>
     );

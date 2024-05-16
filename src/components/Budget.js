@@ -3,7 +3,7 @@ import { AppContext } from '../context/AppContext';
 import ExpenseTotal from './ExpenseTotal';
 
 const Budget = () => {
-    const { budget, remaining } = useContext(AppContext);
+    const { budget, remaining, currency } = useContext(AppContext);
     const [newBudget, setNewBudget] = useState(budget);
 
     const handleInputChange = (event) => {
@@ -21,9 +21,12 @@ const Budget = () => {
         }
     };
 
+    //extrtacting the currency symbol
+    const currencySymbol = currency.split(' ')[0];
+
     return (
         <div className='alert alert-secondary'>
-            <span>Budget: £ </span>
+            <span>Budget: {currencySymbol} </span>
             <input type="number" step="10" value={newBudget} onChange={handleInputChange} onBlur={handleBlur} ></input>
         </div>
     );
