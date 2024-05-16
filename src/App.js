@@ -13,7 +13,7 @@ import ExpenseTotal from './components/ExpenseTotal';
 import { AppProvider } from './context/AppContext';
 import ExpenseList from './components/ExpenseList';
 import AllocationForm from './components/AllocationForm';
-import CurrencyDropdown from './components/CurrencyDopdown';
+import CurrencyDropdown from './components/CurrencyDropdown';
 
 const App = () => {
     return (
