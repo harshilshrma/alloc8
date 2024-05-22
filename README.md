@@ -4,7 +4,7 @@
 
 # Overview
 
-Welcome to **Alloc8** – a smart and intuitive budget allocation app. This project was originally based on source code provided by IBM, but I have made several enhancements and modifications to get it up and running smoothly. Alloc8 helps you manage your finances by tracking your budget and expenses in real time. It’s built using React and leverages a clean and straightforward user interface.
+Welcome to **Alloc8** – a smart and intuitive budget allocation app. This project was originally based on source code provided by IBM, but I have made several enhancements and modifications to get it up and running smoothly. Alloc8 helps you manage your company's finances by tracking your budget and expenses in real time. It’s built using React and leverages a clean and straightforward user interface.
 
 <br>
 
