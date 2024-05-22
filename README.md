@@ -14,7 +14,7 @@ Welcome to **Alloc8** – a smart and intuitive budget allocation app. This proj
 
 <p>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,js,html,css,bootstrap,git,github,vscode" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,react,bootstrap,git,github,vscode" />
   </a>
 </p>
 
