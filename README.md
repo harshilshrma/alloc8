@@ -2,10 +2,6 @@
 
 # Alloc8 💸 - Master Your Budget with Ease
 
-[<img src="./resources/github_icon.png" width="50px" alt="budget-icon">](https://harshilshrma.github.io/alloc8/)<em>&nbsp; (Tap on this image to view the project)</em></span>
-
-<br>
-
 # Overview
 
 Welcome to **Alloc8** – a smart and intuitive budget allocation app. This project was originally based on source code provided by IBM, but I have made several enhancements and modifications to get it up and running smoothly. Alloc8 helps you manage your finances by tracking your budget and expenses in real time. It’s built using React and leverages a clean and straightforward user interface.
@@ -19,6 +15,38 @@ Welcome to **Alloc8** – a smart and intuitive budget allocation app. This proj
     <img src="https://skillicons.dev/icons?i=react,js,html,css,bootstrap,git,github,vscode" />
   </a>
 </p>
+
+<br>
+
+# Installation
+To get a local copy up and running, follow these simple steps:
+
+<table>
+  <thead>
+    <tr>
+      <th>Step</th>
+      <th>Command</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Clone the repo:</td>
+      <td><pre><code>https://github.com/harshilshrma/alloc8.git</code></pre></td>
+    </tr>
+    <tr>
+      <td>Navigate to the project directory:</td>
+      <td><pre><code>cd alloc8</code></pre></td>
+    </tr>
+    <tr>
+      <td>Install the dependencies:</td>
+      <td><pre><code>npm install</code></pre></td>
+    </tr>
+    <tr>
+      <td>Start the development server:</td>
+      <td><pre><code>npm start</code></pre></td>
+    </tr>
+  </tbody>
+</table>
 
 <br>
 
